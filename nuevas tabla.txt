@@ -1,0 +1,30 @@
+CREATE TABLE `tabla_productos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `factura` int(11) DEFAULT NULL,
+  `cantidad` varchar(200) DEFAULT NULL,
+  `productos` varchar(200) DEFAULT NULL,
+    `descripcion` varchar(200) DEFAULT NULL,
+    `precioUnitario` varchar(200) DEFAULT NULL,
+    `importe` varchar(200) DEFAULT NULL,
+    `igv` varchar(200) DEFAULT NULL,
+    `total` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE nota_credito (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nota_credito VARCHAR(15) DEFAULT '0001-000001'
+);
+
+delete from table_facturas where No_Facturas ="152"
+
+CREATE TABLE tabla_nota_credito (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  dia VARCHAR(200),
+  mes VARCHAR(200),
+  anio VARCHAR(4),
+  notaCredito VARCHAR(255),
+  numeroFactura VARCHAR(255),
+  razon VARCHAR(255)
+);
